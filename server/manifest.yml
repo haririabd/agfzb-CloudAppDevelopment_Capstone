@@ -1,5 +1,7 @@
 applications:
   - name: djangoapp
+    services:
+      - SECRET_KEY
     routes:
       - route: haririabd-capstone.au-syd.mybluemix.net
     memory: 128M
