@@ -28,7 +28,8 @@ DEBUG = True
 
 APPEND_SLASH = True
 
-ALLOWED_HOSTS = ["https://haririabd-capstone.au-syd.mybluemix.net/"]
+ALLOWED_HOSTS = ["haririabd-capstone.au-syd.mybluemix.net",
+                 "localhost", "localhost:8000"]
 # host ni asalnya "localhost"
 
 # Application definition
