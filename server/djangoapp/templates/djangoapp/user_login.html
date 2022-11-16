@@ -2,13 +2,13 @@
 
 <!-- prettier-ignore -->
 {% block title %}Login{% endblock %}
+{% block pagename %}Login{% endblock %}
 {% block content %}
 <!-- Stylize Login form -->
-<form action="{% url 'onlinecourse:login' %}" method="post">
+<form action="{% url 'djangoapp:login' %}" method="post">
   {% csrf_token %}
-  <div class="container">
+  <div>
     <!--Style root div with .container class -->
-    <h1>Login</h1>
     <div class="form-group">
       <!--Style second div with .form-group class -->
       <label for="username"><b>User Name</b></label>
@@ -38,7 +38,9 @@
       {{ message }}
     </div>
     {% endif %}
-    <button class="btn btn-primary" type="submit">Login</button>
+    <div class="d-grid gap-2 mt-3">
+      <button class="btn btn-primary" type="submit">Login</button>
+    </div>
     <!--Style button with .btn and .btn-primary class -->
   </div>
 </form>
