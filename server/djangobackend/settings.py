@@ -29,7 +29,7 @@ DEBUG = True
 APPEND_SLASH = True
 
 ALLOWED_HOSTS = ["haririabd-capstone.au-syd.mybluemix.net",
-                 "localhost", "localhost:8000"]
+                 "localhost", "127.0.0.1"]
 # host ni asalnya "localhost"
 
 # Application definition
